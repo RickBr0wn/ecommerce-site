@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../public/hero-image.png'
 
 const Hero = () => {
 	return (
@@ -22,7 +23,7 @@ const Hero = () => {
 			{/* right */}
 			<div className='md:w-3/6'>
 				<Image
-					src='/../public/hero-image.png'
+					src={logo}
 					alt='hero'
 					width={16}
 					height={12}
