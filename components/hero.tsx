@@ -3,9 +3,12 @@ import Link from 'next/link'
 
 const Hero = () => {
 	return (
-		<div className='flex'>
-			<div className='w-3/6 flex flex-col justify-center text-gray-600 pl-14 -mt-8'>
-				<h2 className='font-serif text-5xl mb-4'>Some Catchy Title Here</h2>
+		<div className='flex mt-8 flex-col md:flex-row'>
+			{/* left */}
+			<div className='md:w-3/6 flex flex-col justify-center text-gray-600 pl-14'>
+				<h2 className='font-serif text-4xl lg:text-5xl mb-4'>
+					Some Catchy Title Here
+				</h2>
 				<p className='uppercase tracking-wide'>Our brand tagline goes here.</p>
 				<p className='uppercase tracking-wide mb-4'>
 					Our brand motto goes here.
@@ -16,7 +19,8 @@ const Hero = () => {
 					</a>
 				</Link>
 			</div>
-			<div className='w-3/6 mt-8'>
+			{/* right */}
+			<div className='md:w-3/6'>
 				<Image
 					src='/../public/hero-image.png'
 					alt='hero'
